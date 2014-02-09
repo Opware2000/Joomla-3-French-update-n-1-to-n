@@ -1,3 +1,6 @@
+* 09/02/2014 : Mise à jour 3.2.1 en 3.2.2
+* 27/12/2013 : Suppression Mise à jour 3.2.0 en 3.2.1
+
 Joomla! CMS
 ====================
 

@@ -7,11 +7,16 @@
 	<copyright>(C) 2005 - 2014 Open Source Matters. All rights reserved</copyright>
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
 <<<<<<< HEAD
+<<<<<<< HEAD
 	<version>3.2.5</version>
 =======
 	<version>3.3.6</version>
 >>>>>>> 3.3
 	<creationDate>September 2014</creationDate>
+=======
+	<version>3.4.2</version>
+	<creationDate>June 2015</creationDate>
+>>>>>>> 3.4
 	<description>FILES_JOOMLA_XML_DESCRIPTION</description>
 
 	<scriptfile>administrator/components/com_admin/script.php</scriptfile>

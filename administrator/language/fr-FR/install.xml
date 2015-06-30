@@ -3,12 +3,17 @@
 	<name>French Language pack</name>
 	<tag>fr-FR</tag>
 <<<<<<< HEAD
+<<<<<<< HEAD
 	<version>3.3.4.1</version>
 	<creationDate>17/09/2014</creationDate>
 =======
 	<version>3.3.6.2</version>
 	<creationDate>02/10/2014</creationDate>
 >>>>>>> 3.3
+=======
+	<version>3.4.2.1</version>
+	<creationDate>04/06/2015</creationDate>
+>>>>>>> 3.4
 	<author>French translation team : joomla.fr</author>
 	<authorEmail>traduction@joomla.fr</authorEmail>
 	<authorUrl>http://www.joomla.fr</authorUrl>

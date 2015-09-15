@@ -3,18 +3,16 @@
  * @package     Joomla.Libraries
  * @subpackage  Version
  *
- * @copyright   Copyright (C) 2005 - 2014 Open Source Matters, Inc. All rights reserved.
+ * @copyright   Copyright (C) 2005 - 2015 Open Source Matters, Inc. All rights reserved.
  * @license     GNU General Public License version 2 or later; see LICENSE
  */
 
-defined('_JEXEC') or die;
+defined('JPATH_PLATFORM') or die;
 
 /**
  * Version information class for the Joomla CMS.
  *
- * @package     Joomla.Libraries
- * @subpackage  Version
- * @since       1.0
+ * @since  1.0
  */
 final class JVersion
 {
@@ -22,14 +20,10 @@ final class JVersion
 	public $PRODUCT = 'Joomla!';
 
 	/** @var  string  Release version. */
-	public $RELEASE = '3.2';
+	public $RELEASE = '3.4';
 
 	/** @var  string  Maintenance version. */
-<<<<<<< HEAD
-	public $DEV_LEVEL = '5';
-=======
-	public $DEV_LEVEL = '2';
->>>>>>> 3.4
+	public $DEV_LEVEL = '4';
 
 	/** @var  string  Development STATUS. */
 	public $DEV_STATUS = 'Stable';
@@ -41,33 +35,38 @@ final class JVersion
 	public $CODENAME = 'Ember';
 
 	/** @var  string  Release date. */
-<<<<<<< HEAD
-	public $RELDATE = '23-September-2014';
+	public $RELDATE = '8-September-2015';
 
 	/** @var  string  Release time. */
-	public $RELTIME = '14:00';
-=======
-	public $RELDATE = '30-June-2015';
-
-	/** @var  string  Release time. */
-	public $RELTIME = '12:00';
->>>>>>> 3.4
+	public $RELTIME = '21:30';
 
 	/** @var  string  Release timezone. */
 	public $RELTZ = 'GMT';
 
 	/** @var  string  Copyright Notice. */
-	public $COPYRIGHT = 'Copyright (C) 2005 - 2014 Open Source Matters, Inc. All rights reserved.';
+	public $COPYRIGHT = 'Copyright (C) 2005 - 2015 Open Source Matters, Inc. All rights reserved.';
 
 	/** @var  string  Link text. */
 	public $URL = '<a href="http://www.joomla.org">Joomla!</a> is Free Software released under the GNU General Public License.';
+
+	/**
+	 * Check if we are in development mode
+	 *
+	 * @return  boolean
+	 *
+	 * @since   3.4.3
+	 */
+	public function isInDevelopmentState()
+	{
+		return strtolower($this->DEV_STATUS) != 'stable';
+	}
 
 	/**
 	 * Compares two a "PHP standardized" version number against the current Joomla version.
 	 *
 	 * @param   string  $minimum  The minimum version of the Joomla which is compatible.
 	 *
-	 * @return  bool    True if the version is compatible.
+	 * @return  boolean True if the version is compatible.
 	 *
 	 * @see     http://www.php.net/version_compare
 	 * @since   1.0
